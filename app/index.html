@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Modal</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="fonts/HelveticaNeueCyr/fonts.css">
+	<link rel="stylesheet" href="css/index/style.min.css">
+</head>
+<body>
+
+	<div class="popup"> 
+		<div class="popup__manage">
+			<a class="popup__manage-btn popup__manage-register active" href="#signup"><span>Регистрация</span></a>
+			<a class="popup__manage-btn popup__manage-login" href="#signin"><span>Войти</span></a>
+		</div>
+		<div class="popup__chapter active" id="signup">
+			<div class="popup__inner">
+				<form class="popup__form" action="#">
+					<div class="popup__soc">
+						<p class="popup__descr">Регистрация через:</p>
+						<ul class="popup__soc-list">
+							<li>
+								<a class="popup__soc-fb" href="#">
+									<span class="visually-hidden">Facebook</span>
+									<img src="images/icons/facebook.svg" alt="facebook" width="9" height="17">
+								</a>
+							</li>
+							<li>
+								<a class="popup__soc-gp" href="#">
+									<span class="visually-hidden">Google Plus</span>
+									<img src="images/icons/googleplus.svg" alt="googleplus" width="15" height="15">
+								</a>
+							</li>
+							<li>
+								<a class="popup__soc-vk" href="#">
+									<span class="visually-hidden">Vkontakte</span>
+									<img src="images/icons/vk.svg" alt="vkontakte" width="19" height="10">
+								</a>
+							</li>
+							<li>
+								<a class="popup__soc-apple" href="#">
+									<span class="visually-hidden">Apple</span>
+									<img src="images/icons/apple.svg" alt="apple" width="15" height="17">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="popup__control">
+						<p class="popup__descr">или по E-mail:</p>
+						<label class="popup__label error">
+							<input class="popup__input" type="email" placeholder="E-mail">
+							<p class="popup__label-text">Ошибка! Текст ошибки можно длинный достаточно</p>
+						</label>
+						<label class="popup__label">
+							<input class="popup__input" type="password" placeholder="Пароль">
+							<p class="popup__label-text">Ошибка! Текст ошибки можно длинный достаточно</p>
+						</label>
+						<label class="popup__label">
+							<input class="popup__input" type="password" placeholder="Повторите пароль">
+							<p class="popup__label-text">Ошибка! Текст ошибки можно длинный достаточно</p>
+						</label>
+						<button class="popup__submit" type="submit">Зарегистрироваться</button>
+						<p class="popup__agreement">Нажимая на кнопку “Регистрация”, вы автоматически принимаете <a href="#">условия пользовательского соглашения</a> Mixupload и согласны на <a href="#">обработку ваших персональных данных.</a></p>
+						<div class="popup__signin-wrapper">
+							<p>Уже зарегистрированы?</p>
+							<a class="popup__link popup__signin" href="#">Войти</a>
+						</div>
+					</div>
+				</form>
+				<div class="popup__info">
+					<p class="popup__info-text">Получи бесплатную безлимитную прослушку сразу после регистрации!</p>
+					<ul class="popup__info-list">
+						<li>Более 2 500 000 треков в отличном качестве!</li>
+						<li>Возможность пакетного скачивания треков.</li>
+						<li>Комментируй и голосуй за любимые треки.</li>
+						<li>Составляй собственные плей-листы.</li>
+						<li>Узнавай о самых важных событиях первым!</li>
+					</ul>
+					<p class="popup__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu purus imperdiet, convallis tellus in, scelerisque massa.</p>
+				</div>
+			</div>
+		</div>
+		<div class="popup__chapter" id="signin">
+			<div class="popup__inner">
+				<form class="popup__form" action="#">
+					<div class="popup__soc">
+						<p class="popup__descr">Войти с помощью:</p>
+						<ul class="popup__soc-list">
+							<li>
+								<a class="popup__soc-fb" href="#">
+									<span class="visually-hidden">Facebook</span>
+									<img src="images/icons/facebook.svg" alt="facebook" width="9" height="17">
+								</a>
+							</li>
+							<li>
+								<a class="popup__soc-gp" href="#">
+									<span class="visually-hidden">Google Plus</span>
+									<img src="images/icons/googleplus.svg" alt="googleplus" width="15" height="15">
+								</a>
+							</li>
+							<li>
+								<a class="popup__soc-vk" href="#">
+									<span class="visually-hidden">Vkontakte</span>
+									<img src="images/icons/vk.svg" alt="vkontakte" width="19" height="10">
+								</a>
+							</li>
+							<li>
+								<a class="popup__soc-apple" href="#">
+									<span class="visually-hidden">Apple</span>
+									<img src="images/icons/apple.svg" alt="apple" width="15" height="17">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="popup__control">
+						<p class="popup__descr">или по E-mail:</p>
+						<label class="popup__label">
+							<input class="popup__input" type="email" placeholder="E-mail">
+							<p class="popup__label-text">Ошибка! Текст ошибки можно длинный достаточно</p>
+						</label>
+						<label class="popup__label confirm">
+							<input class="popup__input" type="password" placeholder="Пароль">
+							<p class="popup__label-text">Ошибка! Текст ошибки можно длинный достаточно</p>
+						</label>
+						<p class="popup__descr popup__forgot"><a class="forgot__btn" href="#forgot">Забыли пароль?</a></p>
+						<button class="popup__submit" type="submit">Войти</button>
+						<a class="popup__link popup__signup" href="#">Зарегистрироваться</a>
+					</div>
+				</form>
+				<div class="popup__info">
+					<p class="popup__info-text">Рады видеть вас снова!</p>
+					<p class="popup__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu purus imperdiet, convallis tellus in, scelerisque massa.</p>
+					<ul class="popup__info-list">
+						<li>Более 2 500 000 треков в отличном качестве!</li>
+						<li>Возможность пакетного скачивания треков.</li>
+						<li>Комментируй и голосуй за любимые треки.</li>
+						<li>Составляй собственные плей-листы.</li>
+						<li>Узнавай о самых важных событиях первым!</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+		<div class="popup__chapter" id="forgot">
+			<div class="popup__inner">
+				<form class="popup__form" action="#">
+					<div class="popup__control">
+						<p class="popup__descr">Введите ваш email для восстановления:</p>
+						<label class="popup__label">
+							<input class="popup__input" type="email" placeholder="E-mail">
+							<p class="popup__label-text">Ошибка! Текст ошибки можно длинный достаточно</p>
+						</label>
+						<button class="popup__submit" type="submit">Восстановить пароль</button>
+						<p class="popup__remember">На указанную почту, если к ней привязан аккаунт мы вышлем специальную ссылку, перейдя по которой вы можете задать новый пароль.</p>
+					</div>
+				</form>
+				<div class="popup__info">
+					<p class="popup__info-text">Получи бесплатную безлимитную прослушку сразу после регистрации!</p>
+					<ul class="popup__info-list">
+						<li>Более 2 500 000 треков в отличном качестве!</li>
+						<li>Возможность пакетного скачивания треков.</li>
+						<li>Комментируй и голосуй за любимые треки.</li>
+						<li>Составляй собственные плей-листы.</li>
+						<li>Узнавай о самых важных событиях первым!</li>
+					</ul>
+					<p class="popup__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu purus imperdiet, convallis tellus in, scelerisque massa.</p>
+				</div>
+			</div>
+		</div>
+	</div>		
+
+	<script src="js/libs/jquery-3.6.0.min.js"></script>
+	<script src="js/main/script.js"></script>
+
+</body>
+</html>
